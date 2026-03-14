@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Diagramas de Funciones Cruzadas - Tienda</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+padding:40px;
+}
+
+h1{
+text-align:center;
+margin-bottom:60px;
+}
+
+.diagram{
+background:white;
+border:3px solid #333;
+border-radius:12px;
+padding:30px;
+margin-bottom:80px;
+}
+
+.title{
+font-size:28px;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.lane{
+border-top:2px solid #aaa;
+padding:15px;
+}
+
+.lane:first-child{
+border-top:none;
+}
+
+.lane-title{
+font-weight:bold;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.flow{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:12px;
+}
+
+.process{
+background:#e8f4ff;
+border:2px solid #333;
+border-radius:8px;
+padding:12px;
+min-width:200px;
+text-align:center;
+}
+
+.decision{
+background:#fff3cd;
+border:2px solid #333;
+transform:rotate(45deg);
+width:130px;
+height:130px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.decision span{
+transform:rotate(-45deg);
+text-align:center;
+font-size:14px;
+}
+
+.start{
+background:#d4edda;
+border-radius:30px;
+padding:10px 18px;
+border:2px solid #333;
+}
+
+.end{
+background:#f8d7da;
+border-radius:30px;
+padding:10px 18px;
+border:2px solid #333;
+}
+
+.arrow{
+font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Diagramas de Funciones Cruzadas – Tienda de Barrio</h1>
+
+<div class="diagram">
+
+<div class="title">Proceso: Compra de Productos</div>
+
+<div class="lane">
+<div class="lane-title">Administrador</div>
+
+<div class="flow">
+
+<div class="start">Inicio</div>
+<div class="arrow">➡</div>
+
+<div class="process">Revisar reporte de inventario semanal</div>
+<div class="arrow">➡</div>
+
+<div class="process">Identificar productos con bajo stock</div>
+<div class="arrow">➡</div>
+
+<div class="decision"><span>¿Stock menor al mínimo?</span></div>
+<div class="arrow">➡</div>
+
+<div class="process">Buscar proveedores disponibles</div>
+<div class="arrow">➡</div>
+
+<div class="process">Comparar precios y condiciones</div>
+<div class="arrow">➡</div>
+
+<div class="process">Seleccionar proveedor</div>
+<div class="arrow">➡</div>
+
+<div class="process">Realizar pedido de productos</div>
+
+</div>
+</div>
+
+<div class="lane">
+
+<div class="lane-title">Proveedor</div>
+
+<div class="flow">
+
+<div class="process">Recibir orden de compra</div>
+<div class="arrow">➡</div>
+
+<div class="process">Verificar disponibilidad</div>
+<div class="arrow">➡</div>
+
+<div class="process">Preparar pedido</div>
+<div class="arrow">➡</div>
+
+<div class="process">Despachar mercancía</div>
+<div class="arrow">➡</div>
+
+<div class="end">Fin del proceso</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="diagram">
+
+<div class="title">Proceso: Recepción de Mercancía</div>
+
+<div class="lane">
+<div class="lane-title">Inventario</div>
+
+<div class="flow">
+
+<div class="start">Inicio</div>
+<div class="arrow">➡</div>
+
+<div class="process">Recibir productos del proveedor</div>
+<div class="arrow">➡</div>
+
+<div class="process">Verificar cantidades entregadas</div>
+<div class="arrow">➡</div>
+
+<div class="process">Comparar con factura</div>
+<div class="arrow">➡</div>
+
+<div class="decision"><span>¿Cantidad correcta?</span></div>
+<div class="arrow">➡</div>
+
+<div class="process">Revisar estado de los productos</div>
+<div class="arrow">➡</div>
+
+<div class="process">Registrar entrada en inventario</div>
+<div class="arrow">➡</div>
+
+<div class="process">Enviar productos a almacenamiento</div>
+<div class="arrow">➡</div>
+
+<div class="end">Fin</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="diagram">
+
+<div class="title">Proceso: Atención al Cliente</div>
+
+<div class="lane">
+<div class="lane-title">Cliente</div>
+
+<div class="flow">
+
+<div class="start">Inicio</div>
+<div class="arrow">➡</div>
+
+<div class="process">Ingresar al establecimiento</div>
+<div class="arrow">➡</div>
+
+<div class="process">Buscar productos en estanterías</div>
+
+</div>
+
+</div>
+
+<div class="lane">
+
+<div class="lane-title">Empleado</div>
+
+<div class="flow">
+
+<div class="process">Saludar al cliente</div>
+<div class="arrow">➡</div>
+
+<div class="process">Ofrecer ayuda para encontrar productos</div>
+<div class="arrow">➡</div>
+
+<div class="process">Resolver dudas sobre productos</div>
+<div class="arrow">➡</div>
+
+<div class="process">Acompañar proceso de selección</div>
+
+</div>
+
+</div>
+
+<div class="lane">
+
+<div class="lane-title">Caja</div>
+
+<div class="flow">
+
+<div class="process">Registrar productos en sistema</div>
+<div class="arrow">➡</div>
+
+<div class="process">Calcular valor total</div>
+<div class="arrow">➡</div>
+
+<div class="process">Recibir pago</div>
+<div class="arrow">➡</div>
+
+<div class="process">Entregar factura</div>
+<div class="arrow">➡</div>
+
+<div class="process">Entregar productos</div>
+<div class="arrow">➡</div>
+
+<div class="end">Fin</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="diagram">
+
+<div class="title">Proceso: Limpieza del Local</div>
+
+<div class="lane">
+
+<div class="lane-title">Personal de Aseo</div>
+
+<div class="flow">
+
+<div class="start">Inicio</div>
+<div class="arrow">➡</div>
+
+<div class="process">Revisar áreas del establecimiento</div>
+<div class="arrow">➡</div>
+
+<div class="process">Barrer pisos</div>
+<div class="arrow">➡</div>
+
+<div class="process">Trapear áreas comunes</div>
+<div class="arrow">➡</div>
+
+<div class="process">Limpiar estanterías</div>
+<div class="arrow">➡</div>
+
+<div class="process">Desinfectar superficies</div>
+<div class="arrow">➡</div>
+
+<div class="process">Organizar productos desordenados</div>
+<div class="arrow">➡</div>
+
+<div class="process">Retirar basura</div>
+<div class="arrow">➡</div>
+
+<div class="process">Depositar residuos en contenedor</div>
+<div class="arrow">➡</div>
+
+<div class="end">Fin</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
